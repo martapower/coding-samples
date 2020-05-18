@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+		<!-- Make the page mobile compatible -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<!-- Allow installing the app to the homescreen -->
+    <meta name="mobile-web-app-capable" content="yes">
+    <title>Apdex board app</title>
+      <style>
+        .wrapper {
+          margin: auto;
+        }
+
+        @media (min-width: 900px) {
+          .wrapper {
+            width: 840px;
+          }
+        }
+
+        .container {
+          display: flex;
+          flex-direction: row;
+          flex-wrap: wrap;
+          justify-content: flex-start;
+          align-items: baseline;
+          align-content: flex-start;
+
+          background-color: navy;
+        }
+
+        .item {
+          flex-grow: 1;  /* all items grow equally */
+        }
+
+        .header {
+          background-color: yellow;
+          padding: 0px 30px;
+
+          justify-content: space-between;
+        }
+
+        .title {
+          margin: 0px;
+          order: 1;
+        }
+
+        .userInfo {
+          padding: 0px 15px;
+          order: 2;
+
+          overflow-wrap: break-word;
+          word-wrap: break-word;
+          hyphens: auto;
+          max-width: 300px;
+        }
+
+        .checkboxContainer {
+          padding: 0px 15px;
+          order: 3;
+        }
+
+        @media (max-width: 788px) { /* Check in my example */
+          .checkboxContainer, .userInfo {
+            padding: 0px;
+          }
+        }
+        @media (max-width: 480px) { /* Check in my example */
+          .checkboxContainer, .userInfo {
+            padding-top: 10px;
+          }
+        }
+
+        .cardsContainer {
+          padding: 15px 30px;
+        }
+
+        .listModeContainer {
+          flex-direction: column;  /* apply this class to cardsContainer when list */
+        }
+
+        .card {
+          background-color: red;
+          /* padding: 30px; */
+          margin: 15px 30px;
+        }
+
+        .cardInListMode {
+          background-color: red;
+          margin: 15px 0px;
+          width:100%;
+        }
+
+        @media (min-width: 480px) {
+          .card {
+            width: 315px; to show it as a list */
+          }
+
+        }
+
+        .cardText {
+          width:100%;
+        }
+        .cardItemWrapper{
+          padding: 30px;
+        }
+
+        .cardListTitle {
+          margin: 0px;
+          flex-shrink: 0;
+        }
+
+        .cardList {
+          list-style-type: none;
+          margin: 0px;
+          padding: 0px;
+          flex-shrink: 0;
+        }
+        .cardListItem {
+          margin-top: 23px;
+        }
+
+
+      </style>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="container">
+        <div class="container item header">
+          <h1 class="title">This is a header</h1>
+          <div class="checkboxContainer">
+            <input type="checkbox" class="headerCheckbox" id="headerCheckbox" name="headerCheckbox" checked=true />
+            <label for="headerCheckbox" class="headerCheckboxLabel">Show as list</label>
+          </div>
+          <span class="userInfo">for user averylongemailadress@companyname.com</span>
+        </div>
+
+        <div class="container item cardsContainer listModeContainer">
+          <div class="cardInListMode item container">
+            <div class="cardItemWrapper">
+              <p class="cardListTitle">hostName@xxx.es</p>
+              <ul class="cardList">
+                <li class=" cardListItem">Hello, let's write some text!</li>
+                <li class=" cardListItem">Hello, let's write some text!</li>
+                <li class=" cardListItem">Hello, let's write some text!</li>
+                <li class=" cardListItem">Hello, let's write some text!</li>
+                <li class=" cardListItem">Hello, let's write some text!</li>
+                <li class=" cardListItem">Hello, let's write some text!</li>
+              </ul>
+            </div>
+          </div>
+          <div class="cardInListMode item">
+            <p class="cardListTitle">hostName@xxx.es</p>
+            <ul class="cardList">
+              <li class=" cardListItem">Hello, let's write some text!</li>
+              <li class=" cardListItem">Hello, let's write some text!</li>
+              <li class=" cardListItem">Hello, let's write some text!</li>
+              <li class=" cardListItem">Hello, let's write some text!</li>
+              <li class=" cardListItem">Hello, let's write some text!</li>
+              <li class=" cardListItem">Hello, let's write some text!</li>
+            </ul>
+          </div>
+
+            <div class="cardInListMode item">
+              <p class="cardListTitle">hostName@xxx.es</p>
+              <ul class="cardList">
+                <li class=" cardListItem">Hello, let's write some text!</li>
+                <li class=" cardListItem">Hello, let's write some text!</li>
+                <li class=" cardListItem">Hello, let's write some text!</li>
+                <li class=" cardListItem">Hello, let's write some text!</li>
+                <li class=" cardListItem">Hello, let's write some text!</li>
+                <li class=" cardListItem">Hello, let's write some text!</li>
+              </ul>
+            </div>
+            <div class="cardInListMode item">
+              <p class="cardListTitle">hostName@xxx.es</p>
+              <ul class="cardList">
+                <li class=" cardListItem">Hello, let's write some text!</li>
+                <li class=" cardListItem">Hello, let's write some text!</li>
+                <li class=" cardListItem">Hello, let's write some text!</li>
+                <li class=" cardListItem">Hello, let's write some text!</li>
+                <li class=" cardListItem">Hello, let's write some text!</li>
+                <li class=" cardListItem">Hello, let's write some text!</li>
+              </ul>
+            </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
