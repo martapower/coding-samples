@@ -5,7 +5,7 @@
     "test:watch": "jest --watch"
   },
   "devDependencies": {
-    "eslint": "^3.5.0",
+    "eslint": "^7.0.0",
     "jest": "^22.1.1"
   },
   "jest": {
