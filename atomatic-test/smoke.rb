@@ -2,9 +2,9 @@ require "watir"
 require "pry"
 #gem "chromedriver-helper"
 
-dni = "62185916B"
-mobile = '622292956'
-email = 'mmoreno@digitalorigin.com'
+dni = "xx"
+mobile = 'xx'
+email = 'xx'
 
 browser = Watir::Browser.new :firefox
 browser.goto "URL#"
