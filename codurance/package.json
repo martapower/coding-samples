@@ -1,0 +1,20 @@
+{
+  "name": "CoduranceTraining",
+  "scripts": {
+    "test": "jest",
+    "test:watch": "jest --watch"
+  },
+  "devDependencies": {
+    "eslint": "^3.5.0",
+    "jest": "^22.1.1"
+  },
+  "jest": {
+    "moduleDirectories": [
+      "node_modules",
+      "src"
+    ],
+    "transformIgnorePatterns": [
+      "<rootDir>/node_modules/"
+    ]
+  }
+}
